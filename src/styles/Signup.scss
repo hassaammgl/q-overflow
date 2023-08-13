@@ -1,0 +1,104 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  .box {
+    width: 50%;
+    height: 40rem;
+    overflow-y: scroll;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.027);
+    padding: 3rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+    form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        color: rgb(234, 62, 62);
+        text-decoration: underline;
+        padding: 1rem;
+        font-size: 2.4rem;
+      }
+      .inputs {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.027);
+        align-items: center;
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 15px;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.08);
+        }
+        input {
+          caret-color: red;
+          width: 100%;
+          background: none;
+          color: rgb(234, 62, 62);
+          font-size: larger;
+          outline: none;
+          padding: 5px;
+          border: none;
+          margin-left: 8px;
+        }
+      }
+      .other {
+        width: 100%;
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: rgb(234, 62, 62);
+          padding: 10px;
+        }
+      }
+      .other2 {
+        width: 100%;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        padding: 10px;
+        a {
+          color: rgb(234, 62, 62);
+          padding: 3px;
+        }
+      }
+      button[type="submit"] {
+        margin: 10px 5px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: larger;
+        background-color: rgba(255, 255, 255, 0.027);
+        padding: 10px 30px;
+        border-radius: 30px;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.08);
+          color: rgb(234, 62, 62);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .register-page {
+    .box {
+      width: 90%;
+      padding: 2rem;
+    }
+  }
+}

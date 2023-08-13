@@ -1,0 +1,340 @@
+.question-details {
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+
+  .question-header {
+    border-bottom: 1px solid rgb(234, 62, 62);
+    padding: 10px 0px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+    .title {
+      h1 {
+        font-weight: lighter;
+        font-size: 3rem;
+        margin: 15px 0;
+      }
+
+      >span {
+        margin: 35px 0;
+
+        >span {
+          color: rgb(234, 62, 62);
+        }
+      }
+    }
+
+    a button {
+      border: none;
+      background-color: rgb(234, 62, 62);
+      padding: 15px;
+      border-radius: 7px;
+      color: white;
+      font-size: large;
+
+      &:hover {
+        background: white;
+        color: black;
+        box-shadow: 0 0 10px rgb(245, 114, 114);
+      }
+    }
+  }
+
+  .details {
+    border-bottom: 1px solid rgb(234, 62, 62);
+    padding: 30px 0px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+    height: fit-content;
+  } 
+
+  .tags {
+    border-bottom: 1px solid rgb(234, 62, 62);
+    padding: 30px 0px 30px 0;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    height: fit-content;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin: 0px 30px;
+      background-color: rgb(234, 62, 62);
+      padding: 10px;
+      border-radius: 7px;
+
+      &:hover {
+        background: white;
+        color: black;
+        box-shadow: 0 0 10px rgb(245, 114, 114);
+      }
+    }
+  }
+
+  .answer {
+    border-bottom: 1px solid rgb(234, 62, 62);
+    padding: 30px 0px 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    height: fit-content;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: lighter;
+      margin: 15px 0;
+
+      span {
+        color: rgb(234, 62, 62);
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      aside {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+
+        span {
+          color: rgb(234, 62, 62);
+        }
+
+        button {
+          border: none;
+          background: none;
+          margin: 20px 0;
+
+          .arrow {
+            color: white;
+            font-size: 3rem;
+
+            &:hover {
+              border-radius: 30px;
+              background: white;
+              color: rgb(234, 62, 62);
+              box-shadow: 0 0 10px rgb(245, 114, 114);
+            }
+          }
+        }
+      }
+
+      section {
+        border-bottom: 1px solid rgb(234, 62, 62);
+        padding: 30px 0px 30px 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+        align-items: center;
+        height: fit-content;
+      }
+    }
+  }
+
+  .comments {
+    border-bottom: 1px solid rgb(234, 62, 62);
+    padding: 30px 0px 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    height: fit-content;
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      h2 {
+        font-size: 3rem;
+        border-bottom: 1px solid rgb(234, 62, 62);
+        font-weight: lighter;
+        margin: 15px 0;
+      }
+
+      button {
+        border: none;
+        background-color: rgb(234, 62, 62);
+        padding: 15px;
+        border-radius: 7px;
+        color: white;
+        font-size: large;
+
+        &:hover {
+          background: white;
+          color: black;
+          box-shadow: 0 0 10px rgb(245, 114, 114);
+        }
+      }
+    }
+
+    .all-comments {
+      width: 100%;
+      height: fit-content;
+      padding: 2rem;
+
+      .comment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px 30px 30px 10px;
+        margin: 10px;
+        border-radius: 10px;
+
+        &:hover {
+          box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+
+        aside {
+          padding: 10px;
+
+          .avatar {
+            background-color: rgb(234, 62, 62);
+
+            &:hover {
+              background: white;
+              color: black;
+              box-shadow: 0 0 10px rgb(245, 114, 114);
+            }
+          }
+        }
+
+        section {
+          >.head {
+            margin: 20px 0;
+
+            .username {
+              color: rgb(234, 62, 62);
+              font-weight: bolder;
+              font-size: 1.7rem;
+            }
+
+            .date {
+              color: rgb(234, 62, 62);
+            }
+          }
+
+          .comment-details {
+            text-align: justify;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.not-found {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    width: 40rem;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.844);
+      color: black;
+      border: none;
+      box-shadow: 5px 5px 10px white;
+    }
+
+    .text {
+      font-weight: bold;
+      text-align: center;
+
+      h1 {
+        font-size: 100px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: 20px;
+
+        a {
+          text-decoration: none;
+          color: rgb(234, 62, 62);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .not-found {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      width: 22rem;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid;
+
+      .boy {
+        padding-left: 20px;
+        width: 200px;
+
+        img {
+          width: 180px;
+        }
+      }
+
+      .text {
+        font-weight: bold;
+        text-align: center;
+        padding-right: 20px;
+
+        h1 {
+          font-size: 50px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 15px;
+          margin-top: 15px;
+
+          a {
+            text-decoration: none;
+            color: rgb(234, 62, 62);
+          }
+        }
+      }
+    }
+  }
+}

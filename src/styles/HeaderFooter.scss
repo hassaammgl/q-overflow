@@ -1,0 +1,117 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .links {
+    .icon {
+      font-size: 2rem;
+      transition: all ease-in-out 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        color: rgb(255, 125, 125);
+      }
+    }
+  }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      font-size: 2rem;
+      transition: all ease-in-out 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        color: rgb(255, 125, 125);
+      }
+    }
+
+    .options {
+      position: absolute;
+      right: 10px;
+      top: 75px;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 150px;
+      flex-wrap: wrap;
+      border-radius: 8px;
+      background-color: white;
+      border: 2px solid rgb(255, 255, 255);
+      padding: 10px;
+
+      a {
+        display: flex;
+        color: rgb(128, 122, 122);
+        justify-content: start;
+        text-decoration: none;
+        padding: 5px 10px;
+
+        &:hover {
+          color: rgb(253, 65, 65);
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .search {
+    background-color: rgb(253, 65, 65);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .others {
+    color: black;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    justify-content: end;
+    flex-direction: column;
+
+    .logo {
+      width: 100px;
+      position: absolute;
+      left: 1px;
+      top: 2px;
+    }
+
+    .login {
+      .options {
+        top: 105px;
+        padding: 1.3rem;
+      }
+    }
+  }
+}
