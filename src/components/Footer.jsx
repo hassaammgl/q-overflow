@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="search">
-        <Link to={"/tag/search"}>
+        <Link to={"/search"}>
           <IconButton>
             <SearchRoundedIcon />
           </IconButton>

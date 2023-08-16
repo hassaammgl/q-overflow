@@ -2,9 +2,6 @@
 @import "./Login.scss";
 @import "./Signup.scss";
 @import "./PagenotFound.scss";
-@import "./AskQuestions.scss";
-@import "./QuestionDetails.scss";
-@import "./Home.scss";
 
 * {
   margin: 0;
@@ -24,38 +21,8 @@ body {
   color: rgb(234, 62, 62);
 }
 
-.tags-input {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(77, 64, 62);
-  .input-container {
-    width: 90%;
-    height: fit-content;
-    border: 3px solid;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    .tag {
-      width: fit-content;
-      border: 2px solid red;
-      margin: 10px;
-      padding: 5px;
-      button {
-        width: fit-content;
-        height: fit-content;
-        .close-icon {
-          font-size: small;
-        }
-      }
-    }
-  }
-}
+
+
 
 .loader {
   position: absolute;
@@ -64,8 +31,8 @@ body {
   transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
-  // background: #000;
   box-sizing: border-box;
+
   &::before {
     content: "";
     position: absolute;
@@ -78,6 +45,7 @@ body {
     border-radius: 50%;
     animation: animate 2s linear infinite;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -91,6 +59,7 @@ body {
     animation: animate 2s linear infinite;
     animation-delay: 1s;
   }
+
   @keyframes animate {
     0% {
       width: 0;
@@ -99,13 +68,16 @@ body {
       box-shadow: 0 0 10px #00e250;
       opacity: 1;
     }
+
     50% {
       border: 4px solid #001ae2;
       box-shadow: 0 0 50px #001ae2;
     }
+
     70% {
       opacity: 1;
     }
+
     100% {
       width: 100%;
       height: 100%;

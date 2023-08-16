@@ -7,6 +7,7 @@ import LoginRoundedIcon from "@mui/icons-material/LoginRounded";
 import KeyIcon from "@mui/icons-material/Key";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import StyleIcon from "@mui/icons-material/Style";
 import { IconButton } from "@mui/material";
 import { useState } from "react";
 
@@ -33,6 +34,11 @@ const Header = () => {
         <Link to="/users">
           <IconButton>
             <PeopleAltRoundedIcon className="icon" />
+          </IconButton>
+        </Link>
+        <Link to="/tags">
+          <IconButton>
+            <StyleIcon className="icon" />
           </IconButton>
         </Link>
       </div>
